@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Period Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Period Tracker</h1>
+  </header>
+
+  <div class="container">
+    <h2>Enter Period Data</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="startDate">Start Date:</label>
+    <input type="date" id="startDate" name="startDate" required>
+
+    <label for="endDate">End Date:</label>
+    <input type="date" id="endDate" name="endDate" required>
+
+    <label for="bloodColor">Blood Color:</label>
+    <select id="bloodColor" name="bloodColor" required>
+      <option value="Red">Red</option>
+      <option value="Dark red">Dark Red</option>
+      <option value="Brown">Brown</option>
+      <option value="Black">Black</option>
+    </select>
+
+    <button onclick="savePeriodData()">Save Period Data</button>
+
+    <div id="savedData">
+      <!-- Display saved data here -->
+    </div>
+
+    <button id="deleteButton" onclick="deleteAllData()">Delete All</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
