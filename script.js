@@ -1,6 +1,9 @@
 let editIndex 
 function refreshPage() {
-  location.reload();
+  document.getElementById('name').value = '';
+  document.getElementById('startDate').value = '';
+  document.getElementById('endDate').value = '';
+  document.getElementById('bloodColor').value = '';
 }
 function savePeriodData() {
   const name = document.getElementById("name").value;
@@ -22,6 +25,7 @@ function savePeriodData() {
 
   let savedData = JSON.parse(localStorage.getItem("periodData")) || [];
   savedData.push(periodData);
+  savedData.reverse();
   localStorage.setItem("periodData", JSON.stringify(savedData));
 
   displaySavedData();

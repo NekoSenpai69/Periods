@@ -3,10 +3,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background: linear-gradient(rgb(0, 249, 236), rgb(71, 150, 229));
   }
   header {
-    background-color: #007bff;
+    background-color: #0089d9;
     padding: 5px;
     text-align: center;
     color: white;
@@ -24,7 +24,8 @@
     padding: 10px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ced4da;
+    border: 1px solid #ccc;
+    background: rgb(200, 250, 247);
     box-sizing: border-box;
     border-radius: 4px;
   }
@@ -41,11 +42,11 @@
   button:hover {
     background-color: #218838;
   }
-  #deleteButton, #searchButton {
+  #deleteButton {
     background-color: #dc3545;
     margin-right: 10px;
   }
-  #deleteButton:hover, #searchButton:hover {
+  #deleteButton:hover {
     background-color: #c82333;
   }
   #savedData {
